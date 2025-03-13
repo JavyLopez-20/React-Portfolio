@@ -1,0 +1,19 @@
+:root {
+  --background-color: #cde6f5ff;
+  --primary-color: #554640ff;
+  --secondary-color: #707078;
+  --text-color: black;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #C2B3AE;
+  --text-color: #0A0A0B;
+}
+
