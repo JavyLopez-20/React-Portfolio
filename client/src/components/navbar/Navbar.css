@@ -1,0 +1,28 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;;
+    padding: 1rem;
+    background-color: #C2B3AE;
+    --text-color: #0A0A0B;
+}
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Spread links evenly */
+  }
+  
+  .navbar li {
+    margin: 0 15px; /* Space between items */
+  }
+  
+  .navbar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }

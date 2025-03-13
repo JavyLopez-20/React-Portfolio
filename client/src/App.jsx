@@ -1,33 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navbar from './components/navbar/Navbar';
+import About from './components/about/About';
+import Portfolio from './components/portfolio/Portfolio';
+import Resume from './components/resume/Resume';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
-    <>
-   <div className='App'>
-    <navbar className='App-navbar'>
-      <h1>Javier Lopez</h1>
-      <h2>Full Stack Developer</h2>
-      <ul>
-        <li><a href="/">About Me</a></li>
-        <li><a href="/about">Portfolio</a></li>
-        <li><a href="/contact">Contact Me</a></li>
-        <li><a href="/resume"> Resume</a></li>
-      </ul>
-      </navbar>
-    <header className='App-header'>
-      <h1>Welcome to the React App</h1>
-      </header>
-      <main>
-        <h2>React App</h2>
-        <p>This is a simple React application.</p>
-        </main>
-   </div>
-
-<footer className='App-footer'>
-  <p><a href='github.com/JavyLopez-20'>github</a></p>
-</footer>
-</>
+    <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<About />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
+    </Router>
   )
 }
 
